@@ -1,4 +1,4 @@
-import react from 'react'
+
 import { useState } from 'react'
 export default function Form(props) {
     const { title, PinCode, MobileNo, Add, index } = props.info
@@ -11,7 +11,7 @@ export default function Form(props) {
     const [district, setDistrict] = useState(props.info.district)
     const [Town,setTown]= useState(props.info.Town)
     const [state, setState] = useState(props.info.state)
-    const [data, setdata] = useState([])
+   
     const handleName = (e) => {
         e.preventDefault()
         setName(e.target.value)
